@@ -356,4 +356,9 @@ ul {
 .header-link:active {
   color: #f16f6f;
 }
+.title-image img {
+  margin-left: auto;
+  border-radius: 15px;
+  box-shadow: -12px 20px 40px 10px rgba(0, 0, 0, 0.5);
+}
 /*# sourceMappingURL=main.css.map */
