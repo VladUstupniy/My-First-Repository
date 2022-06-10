@@ -1,0 +1,237 @@
+.prices {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  padding: 75px 0 75px;
+
+  background-color: #49c38f;
+
+  @media (min-width: 768px) {
+    padding: 75px 0 81px;
+
+    background-image: url("../img/section-prices/bg-prices.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 105px 0 90px;
+  }
+}
+
+.prices::before {
+  display: none;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.section-prices__content {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-prices__title h2 {
+  margin-bottom: 30px;
+  color: #fff;
+
+  @media (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 80px;
+  }
+}
+
+.section-prices__subtitle h3 {
+  color: #fff;
+  margin-bottom: 49px;
+  width: 290px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    margin-bottom: 64px;
+    width: auto;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 80px;
+  }
+}
+
+.section-prices__blocks {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1200px) {
+  }
+}
+
+.price-block {
+  width: 290px;
+  margin-right: 0;
+  margin-bottom: 20px;
+  padding: 40px 0;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.75);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    background-color: #3250f6;
+    transition: background-color 0.7s ease;
+
+    .element__month {
+      background-color: #2740cc;
+      transition: background-color 0.7s ease;
+    }
+
+    .element__button {
+      background-color: #ffffff;
+      border: none;
+      transition: background-color 0.7s ease;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 230px;
+    margin-right: 25px;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    width: 300px;
+    margin-right: 30px;
+  }
+}
+
+.price-block__element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.break-line {
+  position: relative;
+  width: 290px;
+  margin: 0;
+  background-color: rgb(240, 240, 240);
+  opacity: 0.051;
+  height: 1px;
+
+  @media (min-width: 768px) {
+    width: 230px;
+  }
+  
+  @media (min-width: 1200px) {
+    width: 300px;
+  }
+}
+
+.element__title {
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #b3b3b3;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.714;
+  letter-spacing: 2.8px;
+}
+
+.element__price {
+  margin-bottom: 35px;
+  font-size: 80px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+}
+
+.element__month {
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 23px;
+  border-radius: 12.5px;
+  padding: 0 15px;
+  /* padding-left: 15px; */
+  padding-right: 10px;
+  margin-bottom: 30px;
+
+  letter-spacing: 2.8px;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 2;
+  text-align: center;
+}
+
+.element__text {
+  margin-top: 30px;
+  margin-bottom: 35px;
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  line-height: 2.4;
+  text-align: center;
+
+  @media (min-width: 1200px) {
+    line-height: 2.5;
+  }
+}
+
+.element__text p {
+  margin: 0;
+}
+
+.element__button {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 20px 30px;
+  border: 1px solid white;
+  border-radius: 30px;
+  cursor: pointer;
+
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: #9a9a99;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 2.8px;
+}
