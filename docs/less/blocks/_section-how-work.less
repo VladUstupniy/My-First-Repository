@@ -1,0 +1,123 @@
+.section-how-work {
+    position: relative;
+    max-width: 1600px;
+    padding-top: 130px;
+    margin: 0 auto;
+    margin-bottom: 148px;
+
+    background-image: url(../../img/bg/line_2.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: auto;
+}
+
+.correction-h2 {
+    margin-bottom: 165px;
+    text-align: center;
+}
+
+.correction-h4 {
+    margin-bottom: 10px;
+}
+
+.section-how-work_wrap {
+    width: 1094px;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-how-work_row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 110px;
+
+    &:nth-child(odd) {
+        flex-direction: row-reverse;
+        text-align: left;
+        
+    }
+
+    &:nth-child(even) {
+        text-align: right;
+    }
+
+    &:nth-last-child(2) {
+        margin-bottom: 77px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.how-work_step {
+    padding-right: 55px;
+    padding-left: 55px;
+    width: 510px;
+}
+
+.how-work_desc {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.how-work_time {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.how-work_step-item {
+    position: relative;
+    width: 74px;
+    height: 74px;
+
+    top:-25px;
+
+    border: 1px solid #460505;
+    border-radius: 28px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 35px 0px rgba(0, 112, 187, 0.35);
+
+    &::after {
+        content:"";
+        position: absolute;
+        display: block;
+        width: 4px;
+        height: 108px;
+        background-color: rgb(225, 238, 244);
+
+        top: -125px;
+        left: 33px;
+    }
+}
+
+.bg-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.bg-img-1 {
+    background-image: url(../../img/img-how-work/icon-1.png);
+}
+
+.bg-img-2 {
+    background-image: url(../../img/img-how-work/icon-2.png);
+}
+
+.bg-img-3 {
+    background-image: url(../../img/img-how-work/icon-3.png);
+}
+
+.bg-img-4 {
+    background-image: url(../../img/img-how-work/icon-4.png);
+}
+
+.bg-img-5 {
+    background-image: url(../../img/img-how-work/icon-5.png);
+}

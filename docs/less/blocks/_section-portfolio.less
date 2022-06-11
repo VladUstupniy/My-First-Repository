@@ -1,4 +1,4 @@
-.section {
+.section-portfolio {
     max-width: 1600px;
     margin: 0 auto;
     background-color: #f4f8f9;
@@ -16,6 +16,7 @@
 }
 
 .section-nav {
+    position: relative;
     display: flex;
     margin-bottom: 50px;
 }
@@ -25,7 +26,6 @@
     font-size: 28px;
     font-weight: 800;
     color: #000000;
-    line-height: 1.2;
 
     &:last-child {
         margin-right: 0;
@@ -43,15 +43,40 @@
 }
 
 .section-nav_item-blocked {
-    margin-right: 80px;
+    /* display: block; */
+    /* margin-right: 80px; */
     font-size: 28px;
     font-weight: 800;
     color: #8fa5ae;
-    line-height: 1.2;
+
+    /* &:last-child {
+        margin-right: 0;
+    } */
+}
+
+.section-nav_wrap-blocked {
+    position: relative;
+    margin-right: 80px;
 
     &:last-child {
         margin-right: 0;
     }
+}
+
+.section-nav_wrap-blocked::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+
+    top: -5px;;
+    right: -15px;
+
+    background-image: url(../../img/img-lock/lock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .section-works {
@@ -73,16 +98,13 @@
     font-weight: 400;
 }
 
-// поработать над блоком ниже
-
-.section-works_image a {
+.section-works_image {
     width: 546px;
     height: 370px;
-
     position: relative;
     display: block;
 
-    &:after {
+    &::after {
         content: "";
         display: block;
         position: absolute;
@@ -110,28 +132,33 @@
     
         font-size: 22px;
         font-weight: 700;
+        color: #f16f6f;
         padding: auto;
     
         opacity: 0;
         z-index: 2;
         
         &:hover {
+            background-color: #f16f6f;
+            color: #ffffff;
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        &:active {
+            background-color: #d86161;
+            color: #ffffff;
             opacity: 1;
             transition: 0.5s;
         }
     }
 
-    &:hover:before,
-    &:hover:after,
-    &:hover .img-view {
+    &:hover::after,
+    &:hover .section-works_button {
         opacity: 1;
         transition: 0.5s;
     }
 }
-
-// необходимо провести работу над section-works_image
-
-
 
 .section-works_link {
     font-size: 32px;
@@ -143,4 +170,3 @@
         color: #f16f6f;
     }
 }
-
