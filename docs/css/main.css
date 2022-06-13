@@ -118,7 +118,9 @@ ul {
   margin-bottom: 160px;
 }
 @media (min-width: 768px) {
-  padding-top: 35px;
+  .header {
+    padding-top: 35px;
+  }
 }
 @media (min-width: 1200px) {
   .header {
