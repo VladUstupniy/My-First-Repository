@@ -22,7 +22,7 @@
 
 <body>
     
-    <header class="header none">
+    <header class="header">
         <div class="header-nav">
             <div class="header-logo">
                 <a class="logo" href="#">ВУ</a>
@@ -34,13 +34,26 @@
                 <a href="#" class="menu-item">Контакты</a>
             </div>
 
-            <div class="header-icons">
-                <a href="https://github.com/" target="_blank">
-                    <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-                </a>
-                <a href="https://vk.com/id134660750" target="_blank">
-                    <i class="fa fa-vk fa-2x" aria-hidden="true"></i>
-                </a>
+            <div class="header-icons header-icons-top">
+                
+                <div class="link_wrap">
+                    <a href="https://github.com/" target="_blank">
+                        <div class="image-link-5"></div>
+                    </a>
+                </div>
+
+                <div class="link_wrap">
+                    <a href="https://vk.com/id134660750" target="_blank">
+                        <div class="image-link-4"></div>
+                    </a>
+                </div>
+
+                <div class="link_wrap">
+                    <a href="https://vk.com/id134660750" target="_blank">
+                        <div class="image-link-3"></div>
+                    </a>
+                </div>
+
             </div>
         </div>
 
@@ -58,14 +71,14 @@
                         <p>Верстальщик сайтов, веб-разработчик. Оперативная вёрстка. Работаю с соблюдением сроков и выполнением ТЗ.</p>
                     </div>
 
-                    <div>
+                    <div class="header-button_wrap">
                         <a href="#" class="button-link">Познакомиться</a>
                         <button class="header-button">Контакты</button>
                     </div>
                 </div>
 
                 <div class="title-image">
-                    <img src="./img/header/photo.png" alt="Фотография">
+                    <img class="photo" src=".//img/header/photo.png" alt="Фотография">
                 </div>
             </div>
             <!-- // Header-row -->
@@ -98,7 +111,7 @@
                 <div class="header-social">
                     <h3 class="header-title-3">На связи:</h3>
 
-                    <div class="header-icons">
+                    <div class="header-icons header-icons-bottom">
                         <a href="#"><div class="image-link-1"></div></a>
                         <a href="#"><div class="image-link-2"></div></a>
                         <a href="#"><div class="image-link-3"></div></a>
@@ -234,7 +247,7 @@
         <!-- // Container -->
     </section>
 
-    <section class="contacts">
+    <section class="contacts none">
         <div class="container">
 
             <h2 class="title-2 correction-h2">Контакты</h2>
@@ -299,7 +312,7 @@
                     </div>
 
 
-                    <button class="form-button">Отправить</button>
+                    <input type="submit" class="form-button">
                 </div>
 
             </div>
@@ -307,6 +320,18 @@
         </div>
 
     </section>
+
+    <footer class="footer">
+        <div class="container">
+            <h4 class="footer-title">© 2022 - Владислав Уступный</h4>
+
+            <div class="footer-text">
+                <p>Веб-разработчик из Москвы, занимаюсь вёрсткой и созданием сайтов. <br>
+                Этот сайт сделал в рамках прохождения обучения по вёрстке на курсах от 
+                <a href="#">Webcademy.ru</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
