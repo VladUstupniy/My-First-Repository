@@ -5,8 +5,11 @@
 }
 
 @media (min-width: 768px) {
-    padding-top: 35px;
-    margin-bottom: 90px;
+    .header {
+        padding-top: 35px;
+        margin-bottom: 90px;
+    }
+
 }
 
 @media (min-width: 1200px) {
@@ -63,6 +66,21 @@
     margin: 0;
     margin-left: 10px;
 
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+
+        width: 65px;
+        height: 10px;
+        background-color: yellow;
+
+        z-index: -1;
+        top: 35px;
+        left: -5px;
+
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -71,8 +89,22 @@
         font-weight: 900;
         line-height: 1.2;
         margin-left: 35px;
-    }
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
     
+            width: 65px;
+            height: 10px;
+            background-color: yellow;
+    
+            z-index: -1;
+            top: 40px;
+            left: -5px;
+    
+        }
+    }
 }
 
 @media (min-width: 1200px) {
@@ -81,6 +113,21 @@
         font-weight: 900;
         line-height: 1.2;
         margin-left: 95px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+    
+            width: 65px;
+            height: 10px;
+            background-color: yellow;
+    
+            z-index: -1;
+            top: 45px;
+            left: -5px;
+    
+        }
     }
 }
 
@@ -412,8 +459,6 @@
 }
 
 .header-title {
-
-    /* margin-top: 25px; */
     margin-bottom: 30px;
     font-size: 60px;
     font-weight: 900;
@@ -431,6 +476,63 @@
     .header-title {
         margin-bottom: 40px;
         font-size: 70px;
+    }
+}
+
+.line-bottom {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+
+        width: 320px;
+        height: 10px;
+        background-color: yellow;
+
+        z-index: -1;
+        top: 52px;
+        left: -5px;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .line-bottom {
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+    
+            width: 270px;
+            height: 10px;
+            background-color: yellow;
+    
+            z-index: -1;
+            top: 45px;
+            left: -5px;
+    
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .line-bottom {
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+    
+            width: 365px;
+            height: 10px;
+            background-color: yellow;
+    
+            z-index: -1;
+            top: 63px;
+            left: -5px;
+    
+        }
     }
 }
 
