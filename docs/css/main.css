@@ -131,7 +131,7 @@ ul {
     max-width: 1600px;
     padding-top: 75px;
     margin-bottom: 240px;
-    background-image: url(../../img/bg/line_1.jpg);
+    background-image: url(img-bg-line/line_1.jpg);
     background-size: auto;
     background-position: center;
     background-repeat: repeat-y;
@@ -826,19 +826,23 @@ ul {
     margin-right: 80px;
   }
 }
-.section-nav_wrap-blocked::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 25px;
-  height: 25px;
-  top: -5px;
-  right: -15px;
-  background-image: url(../../img/img-lock/lock.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
+/* @media (min-width: 1200px) {
+    .section-nav_wrap-blocked::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 25px;
+        height: 25px;
+    
+        top: -5px;;
+        right: -15px;
+    
+        background-image: url(../../img/portfolio/lockicon_120641.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+} */
 .section-works {
   display: flex;
   flex-direction: column;
@@ -974,11 +978,11 @@ ul {
   }
 }
 .section-how-work {
-  /* position: relative; */
+  position: relative;
   width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .section-how-work {
@@ -992,7 +996,6 @@ ul {
     max-width: 1600px;
     padding-top: 150px;
     padding-bottom: 150px;
-    background-image: url(../../img/bg/line_2.jpg);
     background-repeat: repeat-y;
     background-position: center;
     background-size: auto;
@@ -1044,7 +1047,7 @@ ul {
   align-items: center;
 }
 .section-how-work_wrap {
-  width: 100%;
+  max-width: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -1053,7 +1056,7 @@ ul {
 }
 @media (min-width: 768px) {
   .section-how-work_wrap {
-    width: 768px;
+    max-width: 1199px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1190,26 +1193,11 @@ ul {
     top: -25px;
   }
 }
-.bg-img {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
-}
-.bg-img-1 {
-  background-image: url(../../img/img-how-work/icon-1.png);
-}
-.bg-img-2 {
-  background-image: url(../../img/img-how-work/icon-2.png);
-}
-.bg-img-3 {
-  background-image: url(../../img/img-how-work/icon-3.png);
-}
-.bg-img-4 {
-  background-image: url(../../img/img-how-work/icon-4.png);
-}
-.bg-img-5 {
-  background-image: url(../../img/img-how-work/icon-5.png);
-}
+/* .bg-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+} */
 .contacts {
   width: 100%;
   padding-top: 60px;
