@@ -355,6 +355,7 @@ ul {
 .logo {
   margin: 0;
   color: #000000;
+  font-family: 'Lobster', cursive;
 }
 @media (min-width: 1200px) {
   .logo {
