@@ -56,11 +56,6 @@
     }
 }
 
-
-
-
-
-
 .icons {
     display: flex;
     flex-direction: row;
@@ -122,6 +117,8 @@
 @media (min-width: 1200px) {
     .header-icons {
         display: block;
+        margin-right: 80px;
+        margin-top: 10px;
     }
 }
 
@@ -140,36 +137,6 @@
         margin-bottom: 30px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .icons-link-vk {
     color: #000000;
@@ -195,31 +162,9 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .header-mobile-menu {
     margin-right: 35px;
-    margin-top: 20px;
-    
+    margin-top: 10px;
 }
 
 @media (min-width: 1200px) {
@@ -262,7 +207,7 @@
 
         width: 65px;
         height: 10px;
-        background-color: yellow;
+        background-color: #ffd000;
 
         z-index: -1;
         top: 35px;
@@ -286,7 +231,7 @@
     
             width: 65px;
             height: 10px;
-            background-color: yellow;
+            background-color: #ffd000;
     
             z-index: -1;
             top: 40px;
@@ -310,7 +255,7 @@
     
             width: 65px;
             height: 10px;
-            background-color: yellow;
+            background-color: #ffd000;
     
             z-index: -1;
             top: 45px;
@@ -323,16 +268,23 @@
 .logo {
     margin: 0;
     color: #000000;
+}
 
-    &:hover{
-        cursor: pointer;
-        color: rgb(226, 214, 45);
-        transition: 0.5s;
-    }
-
-    &:active {
-        color: #f16f6f;
-        transition: none;
+@media (min-width: 1200px) {
+    .logo {
+        margin: 0;
+        color: #000000;
+    
+        &:hover{
+            cursor: pointer;
+            color: #00b7ff;;
+            transition: 0.5s;
+        }
+    
+        &:active {
+            color: #f16f6f;
+            transition: none;
+        }
     }
 }
 
@@ -366,7 +318,7 @@
         margin-right: 80px;
         color: #000000;
 
-        &:hover{
+        /* &:hover{
             cursor: pointer;
             color: rgb(226, 214, 45);
             transition: 0.5s;
@@ -375,7 +327,7 @@
         &:active {
             color: #f16f6f;
             transition: none;
-        }
+        } */
     }
 }
 
@@ -513,12 +465,16 @@
 
         &:hover {
             color: #000000;
-            border: 4px solid #e4b834;
+            border: 4px solid #ffd000;
 
             &:active {
                 color: #181818;
                 border: 4px solid #181818;
             }
+        }
+
+        a {
+            color: #000000;
         }
     }
 }
@@ -637,7 +593,7 @@
 
         width: 320px;
         height: 10px;
-        background-color: yellow;
+        background-color: #ffd000;
 
         z-index: -1;
         top: 52px;
@@ -655,7 +611,7 @@
     
             width: 270px;
             height: 10px;
-            background-color: yellow;
+            background-color: #ffd000;
     
             z-index: -1;
             top: 45px;
@@ -674,7 +630,7 @@
     
             width: 365px;
             height: 10px;
-            background-color: yellow;
+            background-color: #ffd000;
     
             z-index: -1;
             top: 63px;

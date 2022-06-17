@@ -113,6 +113,29 @@ ul {
   font-weight: 800;
   line-height: 1.2;
 }
+@media (min-width: 1200px) {
+  .animation-link {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1px;
+  }
+  .animation-link:after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 10px;
+    width: 0%;
+    background-color: #ffd000;
+    transition: 1s ease-in-out;
+    top: 2px;
+    left: -10px;
+    z-index: -1;
+  }
+  .animation-link:hover::after {
+    width: 100%;
+  }
+}
 .header {
   margin: 0 auto;
   padding-top: 40px;
@@ -210,6 +233,8 @@ ul {
 @media (min-width: 1200px) {
   .header-icons {
     display: block;
+    margin-right: 80px;
+    margin-top: 10px;
   }
 }
 .icons-on-call {
@@ -248,7 +273,7 @@ ul {
 }
 .header-mobile-menu {
   margin-right: 35px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 @media (min-width: 1200px) {
   .header-mobile-menu {
@@ -284,7 +309,7 @@ ul {
   display: block;
   width: 65px;
   height: 10px;
-  background-color: yellow;
+  background-color: #ffd000;
   z-index: -1;
   top: 35px;
   left: -5px;
@@ -302,7 +327,7 @@ ul {
     display: block;
     width: 65px;
     height: 10px;
-    background-color: yellow;
+    background-color: #ffd000;
     z-index: -1;
     top: 40px;
     left: -5px;
@@ -321,7 +346,7 @@ ul {
     display: block;
     width: 65px;
     height: 10px;
-    background-color: yellow;
+    background-color: #ffd000;
     z-index: -1;
     top: 45px;
     left: -5px;
@@ -331,14 +356,20 @@ ul {
   margin: 0;
   color: #000000;
 }
-.logo:hover {
-  cursor: pointer;
-  color: #e2d62d;
-  transition: 0.5s;
-}
-.logo:active {
-  color: #f16f6f;
-  transition: none;
+@media (min-width: 1200px) {
+  .logo {
+    margin: 0;
+    color: #000000;
+  }
+  .logo:hover {
+    cursor: pointer;
+    color: #00b7ff;
+    transition: 0.5s;
+  }
+  .logo:active {
+    color: #f16f6f;
+    transition: none;
+  }
 }
 .header-menu {
   display: none;
@@ -364,15 +395,16 @@ ul {
   .menu-item {
     margin-right: 80px;
     color: #000000;
-  }
-  .menu-item:hover {
-    cursor: pointer;
-    color: #e2d62d;
-    transition: 0.5s;
-  }
-  .menu-item:active {
-    color: #f16f6f;
-    transition: none;
+    /* &:hover{
+            cursor: pointer;
+            color: rgb(226, 214, 45);
+            transition: 0.5s;
+        }
+
+        &:active {
+            color: #f16f6f;
+            transition: none;
+        } */
   }
 }
 .header-row {
@@ -486,11 +518,14 @@ ul {
   }
   .header-button:hover {
     color: #000000;
-    border: 4px solid #e4b834;
+    border: 4px solid #ffd000;
   }
   .header-button:hover:active {
     color: #181818;
     border: 4px solid #181818;
+  }
+  .header-button a {
+    color: #000000;
   }
 }
 .header-bg {
@@ -592,7 +627,7 @@ ul {
   display: block;
   width: 320px;
   height: 10px;
-  background-color: yellow;
+  background-color: #ffd000;
   z-index: -1;
   top: 52px;
   left: -5px;
@@ -604,7 +639,7 @@ ul {
     display: block;
     width: 270px;
     height: 10px;
-    background-color: yellow;
+    background-color: #ffd000;
     z-index: -1;
     top: 45px;
     left: -5px;
@@ -617,7 +652,7 @@ ul {
     display: block;
     width: 365px;
     height: 10px;
-    background-color: yellow;
+    background-color: #ffd000;
     z-index: -1;
     top: 63px;
     left: -5px;
@@ -732,7 +767,7 @@ ul {
   position: absolute;
   width: 230px;
   height: 10px;
-  background-color: yellow;
+  background-color: #ffd000;
   z-index: -1;
   top: 40px;
   left: -5px;
@@ -826,23 +861,36 @@ ul {
     margin-right: 80px;
   }
 }
-/* @media (min-width: 1200px) {
-    .section-nav_wrap-blocked::after {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 25px;
-        height: 25px;
-    
-        top: -5px;;
-        right: -15px;
-    
-        background-image: url(../../img/portfolio/lockicon_120641.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-    }
-} */
+@media (min-width: 768px) {
+  .section-nav_wrap-blocked::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    top: -5px;
+    right: -15px;
+    background-image: url("..//img/imgl-lock-svg/lockicon_120641.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+@media (min-width: 1200px) {
+  .section-nav_wrap-blocked::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    top: -5px;
+    right: -15px;
+    background-image: url("..//img/imgl-lock-svg/lockicon_120641.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
 .section-works {
   display: flex;
   flex-direction: column;
@@ -1013,7 +1061,7 @@ ul {
   position: absolute;
   width: 300px;
   height: 10px;
-  background-color: yellow;
+  background-color: #ffd000;
   z-index: -1;
   top: 41px;
   left: -5px;
@@ -1397,7 +1445,7 @@ ul {
   display: block;
   position: absolute;
   z-index: -1;
-  background-color: yellow;
+  background-color: #ffd000;
   width: 210px;
   height: 10px;
   top: 40px;
@@ -1409,7 +1457,7 @@ ul {
     display: block;
     position: absolute;
     z-index: -1;
-    background-color: yellow;
+    background-color: #ffd000;
     width: 205px;
     height: 10px;
     top: 40px;
@@ -1422,7 +1470,7 @@ ul {
     display: block;
     position: absolute;
     z-index: -1;
-    background-color: yellow;
+    background-color: #ffd000;
     width: 205px;
     height: 10px;
     top: 40px;
