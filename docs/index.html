@@ -41,7 +41,7 @@
                     </span>
                 </a>
 
-                <a class="icons-link-facebook" href="#">
+                <a id="show-modal" class="icons-link-facebook" href="#">
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -54,6 +54,20 @@
                         <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
                     </span>
                 </a>
+
+                <!-- Modal-window -->
+                <div class="modal-window__wrap">
+                    <div class="modal-window">
+                        <p class="modal-window__paragraph">
+                            Извините, но я пока не использую Facebook, Twitter и Skype.
+                            <br>
+                            Но использую <b>JavaScript</b> для создания подобных модальных окон! ;)
+                        </p>
+            
+                        <button class="button-close" id="close-modal" href="#">Закрыть модальное окно</button>
+                    </div>
+                </div>
+                <!-- // Modal-window -->
 
             </div>
 
@@ -399,6 +413,9 @@
             </div>
         </div>
     </footer>
+
+    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
