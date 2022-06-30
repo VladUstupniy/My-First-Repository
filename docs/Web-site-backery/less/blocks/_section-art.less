@@ -1,0 +1,363 @@
+.art {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+@media (min-width: 768px) {
+    .art {
+        max-width: 768px;
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .art {
+        max-width: 1600px;
+        padding-top: 100px;
+        padding-bottom: 120px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.section-art-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1200px) {
+    .section-art-row {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.art-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+    .art-content {
+        padding-left: 0;
+        padding-right: 30px;
+
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .art-content {
+        padding-left: 35px;
+        padding-right: 105px;
+    }
+}
+
+/* .title-desc in _base */
+
+
+
+.subtitle {
+    font-family: 'Alegreya';
+    font-weight: bold;
+    font-size: 24px;
+    color: #56534c;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .subtitle {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .subtitle {
+        margin-bottom: 50px;
+    }
+}
+
+.cook-imag-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .cook-imag-wrap {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cook-imag-wrap {
+        margin-bottom: 45px;
+    }
+}
+
+.cook-name {
+    font-family: 'Alegreya';
+    font-weight: normal;
+    font-size: 24px;
+    color: #56534c;
+
+    border-bottom: 1px solid #d7d5ca;
+    border-top: 1px solid #d7d5ca;
+    padding: 20px 25px;
+}
+
+.cook-photo {
+    width: 100px;
+    height: 100px;
+    background-image: url('..//img/section-art/cook-photo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.quote {
+    display: flex;
+    flex-direction: row;
+}
+
+.quote-text {
+    font-family: 'scriptinaregular';
+    font-size: 24px;
+    color: #a47d5e;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+}
+
+.quote-highlighting {
+    font-size: 54px;
+    font-family: "Times New Roman";
+    color: rgba(86, 83, 76, 0.502);
+    line-height: 0.5;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .quote-highlighting {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .quote-highlighting {
+        font-size: 60px;
+    }
+}
+
+.quote_top {
+    margin-right: 30px;
+}
+
+.quote_bottom {
+    margin-top: 110px;
+    margin-left: 30px;
+}
+
+@media (min-width: 768px) {
+    .quote_bottom {
+        margin-top: 110px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .quote_bottom {
+        margin-top: 60px;
+    }
+}
+
+.art-image {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrap {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .image-wrap {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.image-1 {
+    position: relative;
+    width: 300px;
+    height: 260px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    background-image: url('..//img/section-art/img-art-section-5.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+
+        border: 5px solid #ffffff;
+        width: 280px;
+        height: 235px;
+
+        top: 8px;
+        left: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .image-1 {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .image-1 {
+        margin-right: 20px;
+    }
+}
+
+.image-2 {
+    position: relative;
+    width: 300px;
+    height: 260px;
+    background-image: url('..//img/section-art/img-art-section-2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+
+        border: 5px solid #ffffff;
+        width: 280px;
+        height: 235px;
+
+        top: 8px;
+        left: 5px;
+    }
+}
+
+.image-3 {
+    position: relative;
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 260px;
+    background-image: url('..//img/section-art/img-art-section-4.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+
+        border: 5px solid #ffffff;
+        width: 280px;
+        height: 235px;
+
+        top: 8px;
+        left: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    .image-3 {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .image-3 {
+        margin-right: 20px;
+    }
+}
+
+.image-4 {
+    position: relative;
+    width: 300px;
+    height: 260px;
+    background-image: url('..//img/section-art/img-art-section-3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+
+        border: 5px solid #ffffff;
+        width: 280px;
+        height: 235px;
+
+        top: 8px;
+        left: 5px;
+    }
+}
+
+.absolut-image {
+    position: absolute;
+    background-image: url('..//img/section-art/art-section-1.png');
+    width: 250px;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.absolute-image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Alegreya';
+    font-weight: normal;
+    text-align: center;
+    font-size: 28px;
+    color: #c9b176;
+    text-transform: uppercase;
+    line-height: 1.2;
+    width: 200px;
+}
+  

@@ -247,6 +247,8 @@
         font-weight: 900;
         line-height: 1.2;
         margin-left: 95px;
+        transition-property: all;
+        transition: all ease 2s;
 
         &::before {
             content: "";
@@ -260,13 +262,14 @@
             z-index: -1;
             top: 45px;
             left: -5px;
-    
+
         }
 
         &:hover {
-            transition: 2s ease;
             transform: rotateY(180deg);
+
         }
+
     }
 }
 

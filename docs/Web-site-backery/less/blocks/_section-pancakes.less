@@ -1,0 +1,346 @@
+.pancakes {
+    width: 100%;
+    background-image: url('..//img/section-pancakes/bg-pancakes.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .pancakes {
+        max-width: 1199px;
+
+        padding-top: 100px;
+        padding-bottom: 90px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pancakes {
+        max-width: 1600px;
+
+        padding-top: 140px;
+        padding-bottom: 110px;
+    }
+}
+
+.card {
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1200px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 95px;
+        margin-right: 200px;
+
+        box-shadow: 65px 0px 40px 12px rgba(0, 0, 0, 0.200);
+    }
+}
+
+.img-wrap {
+    background-image: url('..//img/section-pancakes/img-cake.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding-top: 115px;
+    padding-left: 15px;
+
+    width: 345px;
+    height: 345px;
+} 
+
+@media (min-width: 768px) {
+    .img-wrap {
+        padding-top: 185px;
+        padding-left: 30px;
+
+        width: 415px;
+        height: 415px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .img-wrap {
+        padding-top: 185px;
+        padding-left: 30px;
+
+        width: 515px;
+        height: 515px;
+    }
+}
+
+.img-star {
+    margin-bottom: 10px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.desc-wrap {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 45px 60px 40px;
+    background-color: #fff;
+
+    width: 345px;
+    height: 515px;
+
+    
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: block;
+
+        bottom: 0;
+        right: 0;
+
+        background-image: url('..//img/section-pancakes/Vektor-Smartobjekt-windmill.png');
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        width: 250px;
+        height: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+    .desc-wrap {
+        width: 415px;
+        height: 515px;
+
+        padding: 65px 60px 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .desc-wrap {
+        width: 550px;
+        height: 515px;
+
+        padding: 85px 60px 40px;
+    }
+}
+
+.carousel-wrap {
+    position: relative;
+    width: 200px;
+    margin-left: 35px;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .carousel-wrap {
+        width: 300px;
+        margin-left: 25px;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel-wrap {
+        width: 430px;
+        margin-left: 25px;
+        margin-top: 20px;
+    }
+}
+
+.slide {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-left: 25px;
+}
+
+@media (min-width: 768px) {
+    .slide {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .slide {
+        margin-left: 0;
+    }
+}
+
+.slide__img-1 {
+    background-image: url('..//img/section-pancakes/img-carousel-1.png');
+}
+
+.slide__img-2 {
+    background-image: url('..//img/section-pancakes/img-carousel-2.png');
+}
+
+.slide__img-3 {
+    background-image: url('..//img/section-pancakes/img-carousel-3.png');
+}
+
+.button-carousel.owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 35%;
+    left: -55px;
+
+    width: 35px;
+    height: 35px;
+    transform: rotate(180deg);
+
+    background-image: url(..//img/section-pancakes/arrow-right.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    span {
+        display: none;
+    }
+
+    &:hover {
+        background-image: url(..//img/section-pancakes/arrow-left.svg);
+        transform: rotate(0deg);
+        transition: 0.5s;
+    }
+}
+
+.button-carousel.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 35%;
+    right: 0px;
+
+    width: 35px;
+    height: 35px;
+
+    background-image: url(..//img/section-pancakes/arrow-right.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    span {
+        display: none;
+    }
+
+    &:hover {
+        background-image: url(..//img/section-pancakes/arrow-left.svg);
+        transform: rotate(180deg);
+        transition: 0.5s;
+    }
+}
+
+.absolute-menu {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+
+    width: 50px;
+    height: 50px;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+
+    &::after {
+        position: absolute;
+        content: '';
+        display: block;
+
+        width: 10px;
+        height: 20px;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        background-image: url(..//img/section-pancakes/menu.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+@media (min-width: 768px) {
+    .absolute-menu {
+        left: 50%;
+        top: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .absolute-menu {
+        left: 0;
+        top: 50%;
+    }
+}
+
+.mini-card {
+    display: none;
+    position: absolute;
+    top:0;
+    right: 0;
+    transform: translate(50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: 0px 0px 55px 5px rgba(0, 0, 0, 0.400);
+    padding: 35px 55px;
+    font-family: "Alegreya";
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+}
+
+@media (min-width: 768px) {
+    .mini-card {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .mini-card {
+        display: block;
+    }
+}
+
+.desc-mini-card-top {
+    /* margin-bottom: 40px; */
+    font-size: 18px;
+    color: #a47d5e;
+    text-transform: uppercase;
+}
+
+.desc-mini-card-center {
+    /* margin-bottom: 5px; */
+    font-size: 92px;
+    color: #dfc691;
+}
+
+.desc-mini-card-bottom {
+    /* margin-bottom: 0; */
+    font-size: 18px;
+    color: #979285;
+}

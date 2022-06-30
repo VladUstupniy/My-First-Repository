@@ -85,13 +85,6 @@
         display: block;
         position: relative;
         display: flex;
-        margin-bottom: 50px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .section-nav {
-        margin-bottom: 60px;
     }
 }
 
@@ -222,6 +215,11 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: flex-start;
+        flex-wrap: wrap;
+
+        &:last-child {
+            justify-content: start;
+        }
     }
 }
 
@@ -232,6 +230,8 @@
 @media (min-width: 768px) {
     .section-works_wrap {
         margin-right: 30px;
+
+        margin-top: 60px;
     }
 }
 
@@ -269,6 +269,10 @@
     display: block;
     margin-bottom: 25px;
 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     &::after {
         content: "";
         display: block;
@@ -276,7 +280,7 @@
         top: 0;
         left: 0;
         right: 0;
-        bottom: 6px;
+        bottom: 0;
 
         background: #f0d96080;
         opacity: 0;
@@ -342,6 +346,18 @@
         display: block;
         margin-bottom: 35px;
     }
+}
+
+.image__forest {
+    background-image: url('..//img/portfolio/forest-travel.jpg');
+}
+
+.image__unit {
+    background-image: url('..//img/portfolio/unit.jpg');
+}
+
+.image__backery {
+    background-image: url('..//img/portfolio/backery.png');
 }
 
 .section-works_link {

@@ -338,6 +338,8 @@ ul {
     font-weight: 900;
     line-height: 1.2;
     margin-left: 95px;
+    transition-property: all;
+    transition: all ease 2s;
   }
   .header-logo::before {
     content: "";
@@ -351,7 +353,6 @@ ul {
     left: -5px;
   }
   .header-logo:hover {
-    transition: 2s ease;
     transform: rotateY(180deg);
   }
 }
@@ -783,12 +784,6 @@ ul {
     display: block;
     position: relative;
     display: flex;
-    margin-bottom: 50px;
-  }
-}
-@media (min-width: 1200px) {
-  .section-nav {
-    margin-bottom: 60px;
   }
 }
 .section-nav_item {
@@ -896,6 +891,10 @@ ul {
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .section-works:last-child {
+    justify-content: start;
   }
 }
 .section-works_wrap {
@@ -904,6 +903,7 @@ ul {
 @media (min-width: 768px) {
   .section-works_wrap {
     margin-right: 30px;
+    margin-top: 60px;
   }
 }
 @media (min-width: 1200px) {
@@ -934,6 +934,9 @@ ul {
   position: relative;
   display: block;
   margin-bottom: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .section-works_image::after {
   content: "";
@@ -942,7 +945,7 @@ ul {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 6px;
+  bottom: 0;
   background: #f0d96080;
   opacity: 0;
   z-index: 1;
@@ -997,6 +1000,15 @@ ul {
     display: block;
     margin-bottom: 35px;
   }
+}
+.image__forest {
+  background-image: url('..//img/portfolio/forest-travel.jpg');
+}
+.image__unit {
+  background-image: url('..//img/portfolio/unit.jpg');
+}
+.image__backery {
+  background-image: url('..//img/portfolio/backery.png');
 }
 .section-works_link {
   font-size: 24px;
@@ -1323,10 +1335,14 @@ ul {
   margin-bottom: 30px;
 }
 @media (min-width: 768px) {
-  margin-bottom: 40px;
+  .paragraph-desc {
+    margin-bottom: 40px;
+  }
 }
 @media (min-width: 1200px) {
-  margin-bottom: 50px;
+  .paragraph-desc {
+    margin-bottom: 50px;
+  }
 }
 .contacts-list_wrap {
   display: flex;
@@ -1475,8 +1491,10 @@ ul {
   transition: 0.2s;
 }
 @media (min-width: 1200px) {
-  width: 120px;
-  height: 50px;
+  .form-button {
+    width: 120px;
+    height: 50px;
+  }
 }
 .line {
   position: relative;
