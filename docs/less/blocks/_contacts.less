@@ -89,31 +89,81 @@
     flex-direction: column;
 }
 
-.contacts-list_wrap-element {
+.contacts-list {
+    margin-bottom: 40px;
+}
+
+.contacts-list-item {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
 }
 
 @media (min-width: 1200px) {
-    .contacts-list_wrap-element {
+    .contacts-list-item {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 32px;
     }
-    
 }
 
-.contacts-list_element-left {
-    margin-bottom: 10px;
+.contacts-list-title {
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 700;
+    text-align: left;
 }
 
 @media (min-width: 1200px) {
-    .contacts-list_element-left {
-        margin-bottom: 15px;
-        margin-right: 180px;
+    .contacts-list-title {
+        width: 30%;
+        margin-bottom: 0;
+        font-size: 20px;
+
+        line-height: 1;
+        font-weight: 700;
+        text-align: left;
     }
 }
 
-.contacts-list_link {
-    color: #138ece;
+.contacts-list-link {
+    width: 100%;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 500;
+    text-align: left;
+
+    a {
+        color: #96969d;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contacts-list-link {
+        width: 78%;
+        font-size: 20px;
+        color: #96969d;
+        line-height: 1;
+        font-weight: 500;
+        text-align: left;
+
+        a {
+            color: #96969d;
+
+            &:hover {
+                color: #138ece;
+                transition: 0.2s ease-in;
+            }
+
+            &:active {
+                color: #f16f6f;
+            }
+        }
+    }
 }
 
 .contacts-form {
@@ -166,6 +216,10 @@
     color: #b8b4b4;
 }
 
+.form-input_wrap {
+    width: 100%;
+}
+
 .form-input-email {
     font-size: 24px;
     color: #000000;
@@ -174,10 +228,12 @@
 
 .form-input-theme {
     height: 30px;
+    width: 100%;
 }
 
 .form-input-message {
-    height: 70px;
+    height: 117px;
+    width: 100%;
 }
 
 .form-input:focus {
@@ -193,11 +249,11 @@
     font-weight: 700;
     text-align: center;
     border-radius: 100px;
-    background-color: #ffef14;
+    background-color: #ffd000;
     border: none;
 
     &:hover {
-        background-color: #e4d60f;
+        background-color: #f0c70f;
         transition: 0.2s;
     }
 }

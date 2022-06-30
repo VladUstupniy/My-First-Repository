@@ -15,12 +15,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <!-- // Fonts -->
 
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="./fonts/font-awesome/css/font-awesome.min.css">
+    <!-- // FontAwesome -->
 </head>
 
 <body>
     
-    <header class="header">
+    <!-- header -->
+    <header class="header none">
+        <!-- Header Nav -->
         <div class="header-nav">
             <div class="header-logo">
                 <a class="logo" href="#">ВУ</a>
@@ -77,6 +81,7 @@
                 <div class="menu-line"></div>
             </div>
         </div>
+        <!-- // Header Nav -->
 
         <!-- Container -->
         <div class="container">
@@ -94,7 +99,7 @@
 
                     <div class="header-button_wrap">
                         <a href="#skills" class="button-link">Познакомиться</a>
-                        <button class="header-button"><a href="#section-contacts">Контакты</a></button>
+                        <button class="header-button"><a href="#section-contacts">скачать резюме</a></button>
                     </div>
                 </div>
 
@@ -110,8 +115,9 @@
             <img src="./img/bg/bg.png" alt="Фотография рабочего места">
         </div>
 
+        <!-- Container -->
         <div class="container">
-            <!-- Container -->
+
             <div class="header-row_skills">
                 <div class="header-skills">
                     <h3 id="skills" class="header-title-3">Мои навыки:</h3>
@@ -174,8 +180,10 @@
         </div>
         <!-- // Container -->
     </header>
+    <!-- // header -->
 
-    <section id="section-portfolio" class="section-portfolio">
+    <!-- Section Portfolio -->
+    <section id="section-portfolio" class="section-portfolio none">
         <!-- Container -->
         <div class="container">
             <div class="section-row">
@@ -231,8 +239,10 @@
         </div>
         <!-- // Container -->
     </section>
+    <!-- // Section Portfolio -->
 
-    <section id="section-how-work" class="section-how-work">
+    <!-- Section How Work -->
+    <section id="section-how-work" class="section-how-work none">
         <!-- Container -->
         <div class="container how-work-wrap_center">
             <!-- Section-how-work_wrap -->
@@ -297,8 +307,11 @@
         </div>
         <!-- // Container -->
     </section>
+    <!-- // Section How Work -->
 
+    <!-- Section Contacts -->
     <section id="section-contacts" class="contacts">
+
         <div class="container">
 
             <h2 class="title-2 correction-h2 line">Контакты</h2>
@@ -310,33 +323,21 @@
                     <p class="paragraph-desc">Если вы ищите специалиста по вёрстке сайтов, front-end разработчика в команду или для работы над проектом - напишите мне.</p>
                     
                     <div class="contacts-list_wrap">
-  
-                        <div class="contacts-list_wrap-element">
-                            <div class="contacts-list_element-left">
-                                <p><b>Email:</b></p>
-                            </div>
-                            <div class="contacts-list_element-right">
-                                <p><a class="contacts-list_link" href="mailto:vlad.ustupniy@yandex.ru">vlad.ustupniy@yandex.ru</a></p>
-                            </div>
-                        </div>
 
-                        <div class="contacts-list_wrap-element">
-                            <div class="contacts-list_element-left">
-                                <p><b>Телефон:</b></p>
-                            </div>
-                            <div class="contacts-list_element-right">
-                                <p>+7 (968) 425-10-95</p>
-                            </div>
-                        </div>
-
-                        <div class="contacts-list_wrap-element">
-                            <div class="contacts-list_element-left">
-                                <p><b>Адрес:</b></p>
-                            </div>
-                            <div class="contacts-list_element-right">
-                                <p>Россия, Москва</p>
-                            </div>
-                        </div>
+                        <ul class="contacts-list">
+                            <li class="contacts-list-item">
+                                <div class="contacts-list-title">Email</div>
+                                <div class="contacts-list-link"><a href="mailto:vlad.ustupniy@yandex.ru">vlad.ustupniy@yandex.ru</a></div>
+                            </li>
+                            <li class="contacts-list-item">
+                                <div class="contacts-list-title">Телефон</div>
+                                <div class="contacts-list-link"><a href="">+7 (968) 425-10-95</a></div>
+                            </li>
+                            <li class="contacts-list-item">
+                                <div class="contacts-list-title">Адрес</div>
+                                <div class="contacts-list-link">Россия, Москва</div>
+                            </li>
+                        </ul>
 
                     </div>
 
@@ -394,6 +395,7 @@
 
 
                     <input type="submit" class="form-button">
+                    
                 </div>
 
             </div>
@@ -401,8 +403,10 @@
         </div>
 
     </section>
+    <!-- // Section Contacts -->
 
-    <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer none">
         <div class="container">
             <h4 class="footer-title">© 2022 - Владислав Уступный</h4>
 
@@ -413,9 +417,15 @@
             </div>
         </div>
     </footer>
+    <!-- // Footer -->
 
+    <!-- JQuery -->
     <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+    <!-- // JQuery -->
+
+    <!-- Main JS -->
     <script src="./js/main.js"></script>
+    <!-- Main JS -->
 </body>
 
 </html>
