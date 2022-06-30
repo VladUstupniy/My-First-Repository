@@ -158,3 +158,30 @@ ul {
         }
     }
 }
+
+@media (min-width: 1200px) {
+    .pagination {
+        display: block;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+    
+        top: 50%;
+        right: 2%;
+        z-index: 3;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pagination__item {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        background-color: rgb(80, 121, 167);
+    
+        &:active, &:focus, &:hover {
+            background-color: rgb(230, 105, 105);
+        }
+    }
+}
