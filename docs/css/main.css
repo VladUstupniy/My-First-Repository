@@ -13,6 +13,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #000000;
   line-height: 1.5;
+  font-display: swap;
 }
 .none {
   display: none;
@@ -206,7 +207,7 @@ ul {
     max-width: 1600px;
     padding-top: 75px;
     margin-bottom: 240px;
-    background-image: url("..//img/img-bg-line/line_1.jpg");
+    background-image: url("..//img/img-bg-line/line_1.webp");
     background-size: auto;
     background-position: center;
     background-repeat: repeat-y;
@@ -464,7 +465,7 @@ ul {
 }
 .title-image {
   margin-bottom: 60px;
-  background-image: url('..//img/header/photo.png');
+  background-image: url('..//img/header/photo.webp');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -969,18 +970,22 @@ ul {
   z-index: 1;
 }
 .section-works_image .section-works_button {
+  display: inline-block;
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 9px 0 10px;
   width: 254px;
   height: 52px;
   border-radius: 52px;
   border: none;
+  text-align: center;
   font-size: 22px;
   font-weight: 700;
   color: #f16f6f;
+  background-color: #ffffff;
   padding: auto;
   opacity: 0;
   z-index: 2;
@@ -1020,13 +1025,13 @@ ul {
   }
 }
 .image__forest {
-  background-image: url('..//img/portfolio/forest-travel.jpg');
+  background-image: url('..//img/portfolio/forest-travel.webp');
 }
 .image__unit {
-  background-image: url('..//img/portfolio/unit.jpg');
+  background-image: url('..//img/portfolio/unit.webp');
 }
 .image__backery {
-  background-image: url('..//img/portfolio/backery.png');
+  background-image: url('..//img/portfolio/backery.webp');
 }
 .section-works_link {
   font-size: 24px;
@@ -1067,7 +1072,7 @@ ul {
     max-width: 1600px;
     padding-top: 150px;
     padding-bottom: 150px;
-    background-image: url("..//img/img-bg-line/line_2.jpg");
+    background-image: url("..//img/img-bg-line/line_2.webp");
     background-repeat: repeat-y;
     background-position: center;
     background-size: auto;
@@ -1271,19 +1276,19 @@ ul {
   background-size: auto;
 }
 .bg-img-1 {
-  background-image: url("..//img/how-work/icon-1.png");
+  background-image: url("..//img/how-work/icon-1.webp");
 }
 .bg-img-2 {
-  background-image: url("..//img/how-work/icon-2.png");
+  background-image: url("..//img/how-work/icon-2.webp");
 }
 .bg-img-3 {
-  background-image: url("..//img/how-work/icon-3.png");
+  background-image: url("..//img/how-work/icon-3.webp");
 }
 .bg-img-4 {
-  background-image: url("..//img/how-work/icon-4.png");
+  background-image: url("..//img/how-work/icon-4.webp");
 }
 .bg-img-5 {
-  background-image: url("..//img/how-work/icon-5.png");
+  background-image: url("..//img/how-work/icon-5.webp");
 }
 .contacts {
   width: 100%;
