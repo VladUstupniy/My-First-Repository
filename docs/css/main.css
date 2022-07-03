@@ -258,7 +258,6 @@ ul {
 @media (min-width: 1200px) {
   .header-icons {
     display: block;
-    margin-right: 55px;
     margin-top: 10px;
   }
 }
@@ -357,7 +356,6 @@ ul {
     font-size: 54px;
     font-weight: 900;
     line-height: 1.2;
-    margin-left: 95px;
     transition-property: all;
     transition: all ease 2s;
   }
@@ -379,21 +377,11 @@ ul {
 .logo {
   margin: 0;
   color: #000000;
-  font-family: 'Lobster', cursive;
 }
 @media (min-width: 1200px) {
   .logo {
     margin: 0;
     color: #000000;
-  }
-  .logo:hover {
-    cursor: pointer;
-    color: #00b7ff;
-    transition: 0.5s;
-  }
-  .logo:active {
-    color: #f16f6f;
-    transition: none;
   }
 }
 .header-menu {
@@ -1628,56 +1616,5 @@ ul {
 .footer-text a {
   text-decoration: underline;
   color: #a39c9c;
-}
-.modal-window__wrap {
-  display: none;
-}
-@media (min-width: 768px) {
-  .modal-window__wrap {
-    display: none;
-  }
-}
-@media (min-width: 1200px) {
-  .modal-window__wrap {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(223, 185, 60, 0.7);
-    z-index: 10;
-  }
-}
-.modal-window {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 5px solid #fffb00;
-  background-color: #fff;
-  padding: 15px 20px;
-  width: 600px;
-  box-shadow: 0px 0px 10px 10px #bb8f00;
-}
-.modal-window__paragraph {
-  margin-bottom: 30px;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #000;
-}
-.button-close {
-  color: #000;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 10px 15px;
-  border: 3px solid #e2a601;
-  background-color: #fff235;
-  border-radius: 25px;
 }
 /*# sourceMappingURL=main.css.map */
