@@ -1021,6 +1021,12 @@ ul {
 .image__backery {
   background-image: url('..//img/portfolio/backery.webp');
 }
+.image__web-blog {
+  background-image: url('..//img/portfolio/web-blog.jpg');
+}
+.image__portland {
+  background-image: url('..//img/portfolio/portland.jpg');
+}
 .section-works_link {
   font-size: 24px;
   font-weight: 800;
