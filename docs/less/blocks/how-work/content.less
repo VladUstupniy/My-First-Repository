@@ -1,0 +1,115 @@
+.content-item {
+    height: 220px;
+
+    &:nth-child(odd) {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        .content-item-wrapper {
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+        }
+    }
+
+    &:nth-child(even) {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        .content-item-wrapper {
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @media (min-width:768px) {
+
+        &:nth-child(odd) {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+    
+            .content-item-wrapper {
+                display: flex;
+                flex-direction: row-reverse;
+                text-align: right;
+            }
+        }
+    
+        &:nth-child(even) {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+    
+            .content-item-wrapper {
+                display: flex;
+                flex-direction: row;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.box__content {
+    width: 100%;
+
+    @media (min-width:768px) {
+        width: 285px;
+    }
+    
+    @media (min-width:1200px) {
+        width: 420px;
+    }
+}
+
+.content-box__title {
+    font-weight: 700;
+    line-height: 1;
+    font-size: 18px;
+    margin-bottom: 15px;
+    z-index: 1;
+
+    @media (min-width:768px) {
+        font-size: 20px;
+    }
+    
+    @media (min-width:1200px) {
+        font-size: 24px;
+    }
+}
+
+.content-box__text {
+    font-weight: 500;
+    line-height: 1.1;
+    font-size: 18px;
+    margin-bottom: 15px;
+
+    @media (min-width:768px) {
+        font-size: 20px;
+    }
+    
+    @media (min-width:1200px) {
+        font-size: 24px;
+    }
+}
+
+.content-box__time {
+    font-weight: 600;
+    line-height: 1.1;
+    font-size: 18px;
+
+    @media (min-width:768px) {
+        font-size: 20px;
+    }
+    
+    @media (min-width:1200px) {
+        font-size: 24px;
+    }
+}

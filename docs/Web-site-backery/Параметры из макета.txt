@@ -1,5 +1,0 @@
-Шрифты:
-1)Scriptina - Regular
-2)Alegreya - Regular, Bold
-3)PlayFairDisplay - Bold
-4)ProximaNova - Regular

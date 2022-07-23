@@ -1,0 +1,105 @@
+.portfolio {
+    background-color: @bg-color;
+    padding: 80px 0 95px;
+
+    @media (min-width:768px) {
+        padding: 80px 0 80px;
+    }
+
+    @media (min-width:1200px) {
+        padding: 120px 0 130px;
+    }
+}
+
+.main-works__button-wraper {
+    display: none;
+
+    @media (min-width:1200px) {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fbdb4d00;
+        transition: all 0.3s ease-in;
+    
+        &:hover {
+            background-color: #fbdb4d80;
+    
+            .main-works__button--big,
+            .main-works__button--small {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.main-works__button--big {
+    display: none;
+
+    @media (min-width:1200px) {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        height: 50px;
+        padding: 10px 30px 0px;
+        border-radius: 30px;
+        background-color: #fff;
+    
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.5;
+        color: @active-link;
+        opacity: 0;
+        transition: all 0.5s ease-in;
+    
+        &:hover {
+            background-color: @active-link;
+            color: #fff;
+            transition: all 0.3s ease-in;
+        }
+    
+        &:active {
+            background-color: #d4423b;
+        }
+    }
+}
+
+.main-works__button--small {
+    display: none;
+
+    @media (min-width:1200px) {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        height: 40px;
+        padding: 10px 15px 0px;
+        border-radius: 20px;
+        background-color: #fff;
+    
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.2;
+        color: @active-link;
+        opacity: 0;
+        transition: all 0.5s ease-in;
+    
+        &:hover {
+            background-color: @active-link;
+            color: #fff;
+            transition: all 0.3s ease-in;
+        }
+    
+        &:active {
+            background-color: #d4423b;
+        }
+    }
+    
+}

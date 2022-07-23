@@ -1,0 +1,116 @@
+.form {
+    background-color: #fff;
+    padding: 40px 20px 40px;
+    box-shadow: 0 28px 100px #c2dbeb;
+
+    @media (min-width:768px) {
+        padding: 60px 60px 40px;
+    }
+    
+    @media (min-width:1200px) {
+        padding: 60px 60px 40px;
+    }
+}
+
+.form-input__btn {
+    display: inline-block;
+    height: 54px;
+    width: 100%;
+    border-radius: 27px;
+    border: none;
+    background-color: #fbdc4d;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+
+    @media (min-width:768px) {
+        
+    }
+    
+    @media (min-width:1200px) {
+        width: auto;
+        padding: 0 77px;
+    }
+}
+
+.form-item {
+    position: relative;
+}
+
+.form-item__email {
+    margin-bottom: 65px;
+}
+
+.form-item__theme {
+    margin-bottom: 55px;
+}
+
+.form-item__message {
+    margin-bottom: 35px;
+}
+
+.form-item__input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 1px;
+    border-bottom: 2px solid #eaeaea;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    outline: none;
+    caret-color: @active-link;
+    transition: all 0.2s ease-in;
+
+    &:focus {
+        border-bottom: 2px solid @active-link;
+    }
+}
+
+.form-item__textarea {
+    width: 100%;
+    height: 117px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: none;
+    border-radius: 1px;
+    border-bottom: 2px solid #eaeaea;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    resize: none;
+    outline: none;
+    transition: all 0.2s ease-in;
+
+    &:focus {
+        border-bottom: 2px solid @active-link;
+    }
+}
+
+.error {
+    color: #ea736d;
+    font-size: 14px;
+}
+
+.fake-placeholder {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    color: #bcbcbc;
+    font-size: 18px;
+    font-weight: 600;
+    pointer-events: none;
+    transition: all 0.2s ease-in;
+}
+
+.active-input {
+    top: -25px;
+    color: #ed9626;
+    font-size: 16px;
+    font-weight: 700;
+}

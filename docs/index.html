@@ -4,480 +4,650 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио</title>
-    <link rel="stylesheet" href="./css/main.css">
-
-    <!-- Fonts -->
+    <title>Уступный Владислав - Портфолио</title>
+    <!-- Fonts Monserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">  
-    <!-- // Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="./fonts/font-awesome/css/font-awesome.min.css">
-    <!-- // FontAwesome -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <!-- Owl Carousel 2 -->
+    <link rel="stylesheet" href="./libs/owl-carousel2/assets/owl.carousel.min.css">
+
+    <!-- Main Css -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
 
-    <div class="pagination">
-        <a id="#header" href="#"><div class="pagination__item"></div></a>
-        <a href="#section-portfolio"><div class="pagination__item"></div></a>
-        <a href="#section-how-work"><div class="pagination__item"></div></a>
-        <a href="#section-contacts"><div class="pagination__item"></div></a>
+    <div id="page-nav" class="page-nav">
+        <a class="page-nav__link active-page" href="#header"></a>
+        <a class="page-nav__link" href="#portfolio"></a>
+        <a class="page-nav__link" href="#how-work"></a>
+        <a class="page-nav__link" href="#contacts"></a>
     </div>
+
+    <div class="nav-container">
+        <!-- nav-wrapper -->
+        <nav id="nav-wrapper" class="nav-wrapper">
+            <div class="logo"><a href="#nav-wrapper">УВ</a></div>
+            <div class="nav">
+                <a class="nav__link" href="#nav-wrapper">Главная</a>
+                <a class="nav__link" href="#portfolio">Работы</a>
+                <a class="nav__link" href="#contacts">Контакты</a>
+            </div>
+            <!-- Icons -->
+            <div class="header__icons">
+                <div class="icon-box">
+                    <a href="https://vk.com/id134660750" target="_blank" class="fa-stack fa-1x header-color-vk">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                    </a>
+                </div>
+
+                <div class="icon-box">
+                    <a href="mailto:vladustupniy@ya.ru" target="_blank" class="fa-stack fa-1x header-color-mail">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                    </a>
+                </div>
+
+                <div class="icon-box">
+                    <a href="https://github.com/VladUstupniy" target="_blank" class="fa-stack fa-1x color-github">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- // Icons -->
+            <div class="mobile-button-wrapper">
+                <a href="#" id="mobile-menu-button" class="mobile-menu-button"></a>
+            </div>
+
+            <div class="mobile-menu-overlay">
+                <div class="mobile-menu">
+                    <div class="mobile-menu__logo"><a href="#nav-wrapper">УВ</a></div>
+                    <ul class="mobile-menu__list">
+                        <li><a class="mobile-menu__link" href="#portfolio">Работы</a></li>
+                        <li><a class="mobile-menu__link" href="#how-work">Как я работаю?</a></li>
+                        <li><a class="mobile-menu__link" href="#contacts">Контакты</a></li>
+                    </ul>
+                    <div class="mobile-menu__icons">
+                        <div class="icon-box">
+                            <a href="https://vk.com/id134660750" target="_blank" class="fa-stack fa-1x color-vk">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                            </a>
+                        </div>
     
-    <!-- header -->
-    <header class="header">
-        <!-- Header Nav -->
-        <div class="header-nav">
-            <div class="header-logo">
-                <a class="logo" href="#">ВУ</a>
+                        <div class="icon-box">
+                            <a href="mailto:vladustupniy@ya.ru" target="_blank" class="fa-stack fa-1x color-mail">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                            </a>
+                        </div>
+    
+                        <div class="icon-box">
+                            <a href="https://github.com/VladUstupniy" target="_blank" class="fa-stack fa-1x color-github">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mobile-menu__email">
+                        <a href="#">vlad.ustupniy@yandex.ru</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="header-menu">
-                <a href="#" class="menu-item animation-link">Главная</a>
-                <a href="#section-portfolio" class="menu-item animation-link">Работы</a>
-                <a href="#section-contacts" class="menu-item animation-link">Контакты</a>
+        </nav>
+    </div>
+
+    <header class="header" id="header">
+        <!-- header-container -->
+        
+            <!-- // Nav-wrapper -->
+        
+        <!--  // header-container -->
+        <div class="wrapper">
+            <!-- container -->
+            <div class="container">
+                <!--  header-wrapper -->
+                <div class="header-wrapper-top">
+                    <div class="header__content-left">
+                        <div class="header__title">
+                            <span class="header__title-span">Владислав</span> <br>
+                            <span class="header__title-span">Уступный</span>
+                        </div>
+                        <div class="header__description">
+                            <p>
+                                Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.
+                            </p>
+                        </div>
+                        <div class="button-wrapper">
+                            <a class="button__link--yellow" href="#contacts">Познакомиться</a>
+                            <a class="button__link--opacity" href="./resume/resume.pdf" download="resume">Скачать резюме</a>
+                        </div>
+                    </div>
+                    <div class="header__content-right">
+                        <div class="header-img__wrap">
+                            <img src="./img/header/photo.webp" alt="Фотография">
+                        </div>
+                    </div>
+                </div>
+                <!-- // header-wrapper -->
             </div>
-
-            <div class="icons header-icons">
-
-                <a class="icons-link-vk" href="https://vk.com/id134660750" target="_blank">
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-vk fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-
-                <a target="_blank" class="icons-link-telegram" href="https://t.me/vladustupniy">
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-                
-                <a target="_blank" class="icons-link-whatsapp" href="#">
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
-                    </span>
-                </a>
-
-            </div>
-
-            <div class="header-mobile-menu">
-                <div class="menu-line"></div>
-                <div class="menu-line"></div>
-                <div class="menu-line"></div>
-            </div>
+            <!-- // container -->
         </div>
-        <!-- // Header Nav -->
 
-        <!-- Container -->
+        <div class="header-big-img">
+            <img src="./img/bg/bg.webp" alt="Картинка">
+        </div>
+
+        <!-- container -->
         <div class="container">
-            <!-- Header-row -->
-            <div class="header-row">
-                <div class="header-desc">
-                    <h1 class="header-title">
-                        <span class="line-bottom">Владислав</span><br>
-                        <span class="line-bottom">Уступный</span>
-                    </h1>
-
-                    <div class="header-text">
-                        <p>Верстальщик сайтов, веб-разработчик. Оперативная вёрстка. Работаю с соблюдением сроков и выполнением ТЗ.</p>
-                    </div>
-
-                    <div class="header-button_wrap">
-                        <a href="#section-contacts" class="button-link">Познакомиться</a>
-                        <a href="resume.pdf" download="./resume.pdf" class="download-link">скачать резюме</a>
-                    </div>
+            <!-- header-wrapper -->
+            <div class="header-wrapper-bottom">
+                <!-- header__content-right -->
+                <div class="header__content-left">
+                    <div class="header__subtitle">Мои навыки:</div>
+                    <ul class="header__list">
+                        <li class="header-list__item">Pixel Perfect, полное соответствие макету.</li>
+                        <li class="header-list__item">Верстаю с сеткой или без.</li>
+                        <li class="header-list__item">Адаптивная вёрстка под мобильные устройства.</li>
+                        <li class="header-list__item">Оптимизация под retina экраны.</li>
+                        <li class="header-list__item">с Bootstrap и без него.</li>
+                    </ul>
+                    <a class="button__link--yellow" href="#portfolio">Смотреть работы</a>
                 </div>
-
-                <div class="title-image"></div>
-            </div>
-            <!-- // Header-row -->
-        </div>
-        <!-- // Container -->
-
-        <div class="header-bg">
-            <img src="./img/bg/bg.webp" alt="Фотография рабочего места">
-        </div>
-
-        <!-- Container -->
-        <div class="container">
-
-            <div class="header-row_skills">
-                <div class="header-skills">
-                    <h3 id="skills" class="header-title-3">Мои навыки:</h3>
-
-                    <div class="header-skills-desk">
-                        <ul>
-                            <li class="header-list-item">Pixel perfect, полное cоответствие по макету.</li>
-                            <li class="header-list-item">Верстаю с сеткой или без.</li>
-                            <li class="header-list-item">Адаптивная вёрстка под мобильный устройства.</li>
-                            <li class="header-list-item">Оптимизация под retina экраны.</li>
-                            <li class="header-list-item">С Bootstrap и без него.</li>
-                        </ul>
-                    </div>
-
-                    <a href="#section-portfolio" class="button-link">Смотреть работы</a>
-                </div>
-
-                <div class="header-social">
-                    <h3 class="header-title-3">На связи:</h3>
-
-                    <div class="icons icons-on-call">
-
-                        <a class="icons-on-call__link-vk icons-margin" href="https://vk.com/id134660750" target="_blank">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x color-circle-vk"></i>
-                                <i class="fa fa-vk fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-
-                        <a target="_blank" class="icons-on-call__link-telegram icons-margin" href="https://t.me/vladustupniy">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x color-circle-telegram"></i>
-                                <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-
-                        <a target="_blank" class="icons-on-call__link-whatsapp icons-margin" href="#">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x color-circle-whatsapp"></i>
-                                <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-
-                    </div>
-
-                    <p>
-                        <a href="mailto:vlad.ustupniy@yandex.ru" class="header-link">
-                            vlad.ustupniy@yandex.ru
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- // Container -->
-    </header>
-    <!-- // header -->
-
-    <!-- Section Portfolio -->
-    <section id="section-portfolio" class="section-portfolio">
-        <!-- Container -->
-        <div class="container">
-            <div class="section-row">
-
-                <div class="section-wrap">
-                    <div class="section-title">
-                        <h2 class="title-2">Портфолио</h2>
-                    </div>
-
-                    <div class="section-nav">
-                        <a href="#section-works" class="section-nav_item">Все работы</a>
-
-                        <div class="section-nav_wrap-blocked">
-                            <a class="section-nav_item-blocked">Bootstrap</a>
-                        </div>
-
-                        <div class="section-nav_wrap-blocked">
-                            <a class="section-nav_item-blocked">WordPress</a>
-                        </div>
-
-                        <div class="section-nav_wrap-blocked">    
-                            <a class="section-nav_item-blocked">Frontend</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Section works -->
-                <div id="section-works" class="section-works">
-                    <div class="section-works_wrap">
-                        <div class="section-works_image hidden image__portland">
-                            <a class="section-works_button" target="_blank" href="./project-portland/index.html">
-                                Смотреть проект
-                            </a>
-                            <img src="./img/portfolio/portland.png" alt="Photo">
-                        </div>
-                        <a target="_blank" class="section-works_link" href="./project-portland/index.html">
-                            Вёрстка "Portland"
-                        </a>
-                        <p>Вёрстка страницы интернет-магазина <br> с использованием галп-сборки.</p>
-                    </div>
-
-                    <div class="section-works_wrap">
-                        <div class="section-works_image hidden image__backery">
-                            <a class="section-works_button" target="_blank" href="./Web-site-backery/index.html">
-                                Смотреть проект
-                            </a>
-                            <!-- <img src="./img/portfolio/backery.webp" alt="Photo"> -->
-                        </div>
-                        <a target="_blank" class="section-works_link" href="./Web-site-backery/index.html">
-                            Вёрстка "Backery"
-                        </a>
-                        <p>Вёрстка многостраничного сайта <br> с мобильной адаптацией без макета.</p>
-                    </div>
-                
-                    <div class="section-works_wrap">
-                        <div class="section-works_image hidden image__portland">
-                            <a class="section-works_button" target="_blank" href="./project-booking/index.html">
-                                Смотреть проект
-                            </a>
-                            <img src="./img/portfolio/booking.webp" alt="Photo">
-                        </div>
-                        <a target="_blank" class="section-works_link" href="./project-booking/index.html">
-                            Вёрстка "Booking"
-                        </a>
-                        <p>Вёрстка страницы букинга с использованием <br> галп-сборки и jQuery библиотек.</p>
-                    </div>
-
-                    <div class="section-works_wrap">
-                        <div class="section-works_image hidden image__forest">
-                            <a target="_blank" class="section-works_button" href="./project-forest-travel/index.html">
-                                Смотреть проект
-                            </a>
-                            <img src="./img/portfolio/forest-travel.jpg" alt="Photo">
-                        </div>
-                        <a target="_blank" class="section-works_link" href="./project-forest-travel/index.html">
-                            Вёрстка "Форест тревел"
-                        </a>
-                        <p>Вёрстка учебного многостраничного сайта.</p>
-                    </div>
-
-                    <div class="section-works_wrap">
-                        <div class="section-works_image hidden image__unit">
-                            <a class="section-works_button" target="_blank" href="./project-unit/index.html">
-                                Смотреть проект
-                            </a>
-                            <img src="./img/portfolio/unit.jpg" alt="Photo">
-                        </div>
-                        <a target="_blank" class="section-works_link" href="./project-unit/index.html">
-                            Вёрстка "Юнит"
-                        </a>
-                        <p>Вёрстка учебного многостраничного сайта <br> с мобильной адаптацией.</p>
-                    </div>
-                    
-                    <div class="section-works_wrap hidden">
-                        <div class="section-works_image hidden image__web-blog">
-                            <a class="section-works_button" target="_blank" href="./project-web-blog/index.html">
-                                Смотреть проект
-                            </a>
-                            <img src="./img/portfolio/web-blog.jpg" alt="Photo">
-                        </div>
-                        <a target="_blank" class="section-works_link" href="./project-web-blog/index.html">
-                            Вёрстка "Web-blog"
-                        </a>
-                        <p>Вёрстка страницы блога <br> с использованием препроцессора SCSS.</p>
-                    </div>
-                </div>
-                <!-- // Section works -->
-            </div>
-        </div>
-        <!-- // Container -->
-    </section>
-    <!-- // Section Portfolio -->
-
-    <!-- Section How Work -->
-    <section id="section-how-work" class="section-how-work">
-        <!-- Container -->
-        <div class="container how-work-wrap_center">
-            <!-- Section-how-work_wrap -->
-            <div class="section-how-work_wrap">
-
-                <h2 class="title-2 correction-h2">Как я работаю</h2>
+                <div class="header__content-right">
+                    <!-- content-wrapper -->
+                    <div class="content-wrapper">   
+                        <div class="header__subtitle">На связи:</div>
+                        <div class="icons-wrapper">
+                            <!-- icons -->
+                            <div class="icons">
+                                <div class="icon-box">
+                                    <a href="https://vk.com/id134660750" target="_blank" class="fa-stack fa-1x color-vk">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                                    </a>
+                                </div>
             
-                <div class="section-how-work_row">
-                    <div class="how-work_step">
-                        <h4 class="title-4 correction-h4">Оцениваю макет</h4>
-                        <p class="how-work_desc">Оцениваю объём работы, сложность, нюансы. Задаю вопросы.</p>
-                        <p class="how-work_time">Время: 2-4 часа</p>
-                    </div>
+                                <div class="icon-box">
+                                    <a href="mailto:vlad.ustupniy@yandex.ru" target="_blank" class="fa-stack fa-1x color-mail">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                                    </a>
+                                </div>
+            
+                                <div class="icon-box">
+                                    <a href="https://github.com/VladUstupniy" target="_blank" class="fa-stack fa-1x color-github">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- // icons -->
+                        </div>
+                        <a href="mailto:vlad.ustupniy@yandex.ru" target="_blank" class="header-mail__link">vlad.ustupniy@yandex.ru</a>
+                    </div> 
+                    <!-- // content-wrapper -->
+                </div>
+            </div>
+            <!-- // header-wrapper -->
+        </div>
+        <!-- // container -->
+    </header>
 
-                    <div class="how-work_step-item bg-img bg-img-1 after-item-1">
-                        <!-- <img class="img-how-work" src="./img/how-work/icon-1.png" alt=""> -->
+    <section class="portfolio" id="portfolio">
+        <!-- container -->
+        <div class="container">
+
+            <h2 class="section__title">Портфолио</h2>
+
+            <!-- TABS -->
+            <div class="tabs">
+                <ul class="tabs__list" id="tabs-nav">
+                    <li><a href="#tab1">Все работы</a></li>
+                    <li><a href="#tab2">Bootstrap</a></li>
+                    <li><a href="#tab3">Wordpress</a></li>
+                    <li><a href="#tab4">Frontend</a></li>
+                </ul>
+
+                <!-- Tabs-sections -->
+                <div id="tabs-sections" class="tabs-sections-wrapper">
+                    <!-- TAB 1 -->
+                    <div id="tab1" class="sections__tab">
+
+                        <div class="main-works">
+                            <!-- ОТСЕК 1 --big -->
+                            <div class="main-works__big">
+
+                                <div class="main-works__img--big"> 
+                                    <img src="./img/portfolio/portland.webp" alt="Фото"> 
+                                    <div class="main-works__button-wraper">
+                                        <a class="main-works__button--big" href="./pages/page-portland.html">Смотреть проект</a>
+                                    </div>
+                                </div>
+
+                                <div class="main-works__title--big"> 
+                                    <a href="./pages/page-portland.html"> 
+                                        <h4>Вёрстка "Portland"</h4> 
+                                    </a> 
+                                </div>
+
+                                <div class="main-works__description--big">
+                                    <p>Вёрстка и frontend страницы интернет-магазина на gulp-сборке.</p>
+                                    <p>Затрачено времени: <span>4 дня</span></p> 
+                                </div>
+                            </div>
+                            <!-- // ОТСЕК 1 --big -->
+
+                            <!-- ОТСЕК 2 --big -->
+                            <div class="main-works__big">
+
+                                <div class="main-works__img--big"> 
+                                    <img src="./img/portfolio/backery.webp" alt="Фото">
+                                    <div class="main-works__button-wraper">
+                                        <a class="main-works__button--big" href="./pages/page-backery.html">Смотреть проект</a>
+                                    </div>
+                                </div>
+
+                                <div class="main-works__title--big"> 
+                                    <a href="./pages/page-backery.html"> 
+                                        <h4>Вёрстка "Backery"</h4> 
+                                    </a> 
+                                </div>
+
+                                <div class="main-works__description--big">
+                                    <p>Вёрстка многостраничного сайта с мобильной адаптацией без макета.</p>
+                                    <p>Затрачено времени: <span>3 дня</span></p>
+                                </div>
+                            </div>
+                            <!-- // ОТСЕК 2 --big -->
+                        </div>
+
+                        <div class="main-works__carousel-wrapper">
+
+                            <div class="main-works__carousel owl-carousel">
+
+                                <!-- ОТСЕК 1 --small -->
+                                <div class="main-works__small">
+
+                                    <div class="main-works__img--small"> 
+                                        <img src="./img/portfolio/booking.webp" alt="Фото">
+                                        <div class="main-works__button-wraper">
+                                            <a class="main-works__button--small" href="./pages/page-booking.html">Смотреть проект</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="main-works__title--small"> 
+                                        <a href="./pages/page-booking.html"> 
+                                            <h4>Вёрстка "Booking"</h4> 
+                                        </a> 
+                                    </div>
+
+                                    <div class="main-works__description--small">
+                                        <p>Вёрстка и frontend многостраничного сайта на gulp-сборке.</p>
+                                        <p>Затрачено времени: <span>4 дня</span></p>
+                                    </div>
+
+                                </div>
+                                <!-- // ОТСЕК 1 --small -->
+
+                                <!-- ОТСЕК 2 --small -->
+                                <div class="main-works__small">
+
+                                    <div class="main-works__img--small"> 
+                                        <img src="./img/portfolio/forest-travel.webp" alt="Фото">
+                                        <div class="main-works__button-wraper">
+                                            <a class="main-works__button--small" href="./pages/page-forest-travel.html">Смотреть проект</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="main-works__title--small"> 
+                                        <a href="./pages/page-forest-travel.html"> 
+                                            <h4>Вёрстка "Forest travel"</h4> 
+                                        </a> 
+                                    </div>
+
+                                    <div class="main-works__description--small">
+                                        <p>Вёрстка многостраничного сайта.</p>
+                                        <p>Затрачено времени: <span>3 дня</span></p>
+                                    </div>
+
+                                </div>
+                                <!-- // ОТСЕК 2 --small -->
+
+                                <!-- ОТСЕК 3 --small -->
+                                <div class="main-works__small">
+
+                                    <div class="main-works__img--small"> 
+                                        <img src="./img/portfolio/unit.webp" alt="Фото">
+                                        <div class="main-works__button-wraper">
+                                            <a class="main-works__button--small" href="./pages/page-unit.html">Смотреть проект</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="main-works__title--small"> 
+                                        <a href="./pages/page-unit.html"> 
+                                            <h4>Вёрстка "Unit"</h4> 
+                                        </a> 
+                                    </div>
+
+                                    <div class="main-works__description--small">
+                                        <p>Вёрстка многостраничного сайта с мобильной адаптацией по макету.</p>
+                                        <p>Затрачено времени: <span>3 дня</span></p>
+                                    </div>
+
+                                </div>
+                                <!-- // ОТСЕК 3 --small -->
+
+                                <!-- ОТСЕК 4 --small -->
+                                <div class="main-works__small">
+
+                                    <div class="main-works__img--small"> 
+                                        <img src="./img/portfolio/web-blog.webp" alt="Фото">
+                                        <div class="main-works__button-wraper">
+                                            <a class="main-works__button--small" href="./pages/page-web-blog.html">Смотреть проект</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="main-works__title--small"> 
+                                        <a href="./pages/page-web-blog.html"> 
+                                            <h4>Вёрстка страницы блога</h4> 
+                                        </a> 
+                                    </div>
+
+                                    <div class="main-works__description--small">
+                                        <p>Вёрстка страницы блога с освоением препроцессора SCSS.</p>
+                                        <p>Затрачено времени: <span>2 дня</span></p>
+                                    </div>
+
+                                </div>
+                                <!-- // ОТСЕК 4 --small -->
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- // TAB 1 -->
+
+                    <!-- TAB 2 -->
+                    <div id="tab2" class="sections__tab">
+                        
+                    </div>
+                    <!-- // TAB 2 -->
+
+                    <!-- TAB 3 -->
+                    <div id="tab3" class="sections__tab">
+                        
+                    </div>
+                    <!-- // TAB 3 -->
+
+                    <!-- TAB 4 -->
+                    <div id="tab4" class="sections__tab">
+
+                        <div class="main-works">
+                            <!-- ОТСЕК 1 --big -->
+                            <div class="main-works__big">
+
+                                <div class="main-works__img--big"> 
+                                    <img src="./img/portfolio/portland.webp" alt="Фото"> 
+                                    <div class="main-works__button-wraper">
+                                        <a class="main-works__button--big" href="./pages/page-portland.html">Смотреть проект</a>
+                                    </div>
+                                </div>
+
+                                <div class="main-works__title--big"> 
+                                    <a href="./pages/page-portland.html"> 
+                                        <h4>Вёрстка "Portland"</h4> 
+                                    </a> 
+                                </div>
+
+                                <div class="main-works__description--big">
+                                    <p>Вёрстка и frontend страницы интернет-магазина на gulp-сборке.</p>
+                                    <p>Затрачено времени: <span>4 дня</span></p> 
+                                </div>
+                            </div>
+                            <!-- // ОТСЕК 1 -big -->
+                            
+                            <!-- ОТСЕК 2 --big -->
+                            <div class="main-works__big">
+
+                                <div class="main-works__img--big"> 
+                                    <img src="./img/portfolio/booking.webp" alt="Фото">
+                                    <div class="main-works__button-wraper">
+                                        <a class="main-works__button--big" href="./pages/page-booking.html">Смотреть проект</a>
+                                    </div>
+                                </div>
+
+                                <div class="main-works__title--big"> 
+                                    <a href="./pages/page-booking.html"> 
+                                        <h4>Вёрстка "Booking"</h4> 
+                                    </a> 
+                                </div>
+
+                                <div class="main-works__description--big">
+                                    <p>Вёрстка и frontend многостраничного сайта на gulp-сборке.</p>
+                                    <p>Затрачено времени: <span>4 дня</span></p>
+                                </div>
+                            </div>
+                            <!-- // ОТСЕК 2 --big -->
+                        </div>
+                        
+                    </div>
+                    <!-- // TAB 4 -->
+                </div>
+                <!-- // Tabs-sections -->
+            </div>
+            <!-- // TABS -->
+        </div>
+        <!-- // container -->
+    </section>
+
+    <section class="how-work" id="how-work">
+
+        <div class="container">
+            
+            <div class="section-title-wrapper">
+                <h2 class="section__title">Как я работаю</h2>
+            </div>
+            
+            <div class="container--small">
+
+                <div class="content-item">
+                    <div class="content-item-wrapper">
+                        <div class="box-img-wrapper">
+                            <div class="box__img line-1">
+                                <img src="./img/icons/icon-1.webp" alt="Иконка">
+                            </div>
+                        </div>
+                        
+                        <div class="box__content">
+                            <div class="content-box__title">Оцениваю макет</div>
+                            <div class="content-box__text">Оцениваю объём работы, сложность, ньюансы, задаю вопросы.</div>
+                            <div class="content-box__time">Время: 2-4 часа</div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="section-how-work_row">
-                    <div class="how-work_step">
-                        <h4 class="title-4 correction-h4">ТЗ, смета и график работ</h4>
-                        <p class="how-work_desc">Согласовываем техническое задание и график работ по проекту. Осмечиваю стоимоcть по этапам работы.</p>
-                        <p class="how-work_time">Время: 2-4 часа</p>
+                <div class="content-item">
+                    <div class="content-item-wrapper">
+                        <div class="box-img-wrapper">
+                            <div class="box__img line-2">
+                                <img src="./img/icons/icon-2.webp" alt="Иконка">
+                            </div>
+                        </div>
+                        
+                        <div class="box__content">
+                            <div class="content-box__title">ТЗ, смета и график работ</div>
+                            <div class="content-box__text">Согласовываем техническое задание и график работ по проекту. Осм5ечиваю стоимость по этапам работы.</div>
+                            <div class="content-box__time">Время: 2-4 часа</div>
+                        </div>
                     </div>
-
-                    <div class="how-work_step-item bg-img bg-img-2 after-item-2"></div>
                 </div>
 
-                <div class="section-how-work_row">
-                    <div class="how-work_step">
-                        <h4 class="title-4 correction-h4">Вы держите руку на пульсе</h4>
-                        <p class="how-work_desc">Выдаю клиенту доступ к GitHub репозиторию и доске Trello. вы в любое время можете видеть актуальное состояние проекта и задач.</p>
-                        <p class="how-work_time">Время: 2 часа</p>
+                <div class="content-item">
+                    <div class="content-item-wrapper">
+                        <div class="box-img-wrapper">
+                            <div class="box__img line-3">
+                                <img src="./img/icons/icon-3.webp" alt="Иконка">
+                            </div>
+                        </div>
+                        
+                        <div class="box__content">
+                            <div class="content-box__title">Вы держите руку на пульсе</div>
+                            <div class="content-box__text">Выдаю клиенту доступ к Github репозиторию и доске Trello. Вы в любое время можете видеть актуальное состояние проекта и задач.</div>
+                            <div class="content-box__time">Время: 2 часа</div>
+                        </div>
                     </div>
-
-                    <div class="how-work_step-item bg-img bg-img-3 after-item-3"></div>
                 </div>
 
-                <div class="section-how-work_row">
-                    <div class="how-work_step">
-                        <h4 class="title-4 correction-h4">Выполняю каждый этап</h4>
-                        <p class="how-work_desc">Поочерёдно выполняю каждый этап работы. Передаю результаты. Заказчик производит поэтапную оплату.</p>
-                        <p class="how-work_time">Время: 2-4 часа</p>
+                <div class="content-item">
+                    <div class="content-item-wrapper">
+                        <div class="box-img-wrapper">
+                            <div class="box__img line-4">
+                                <img src="./img/icons/icon-4.webp" alt="Иконка">
+                            </div>
+                        </div>
+                        
+                        <div class="box__content">
+                            <div class="content-box__title">Выполняю каждый этап</div>
+                            <div class="content-box__text">Поочередно выполняю каждый этап работы. Передаю результаты. Заказчик производит поэтапную оплату.</div>
+                            <div class="content-box__time">Время: 2-4 часа</div>
+                        </div>
                     </div>
-
-                    <div class="how-work_step-item bg-img bg-img-4 after-item-4"></div>
                 </div>
 
-                <div class="section-how-work_row">
-                    <div class="how-work_step">
-                        <h4 class="title-4 correction-h4">Финальное ревью проекта</h4>
-                        <p class="how-work_desc">Проект готов. Финальное ревью и полировка до идеального состояния. Передаю файлы проекта, заливаю сайт на хостинг заказчика.</p>
-                        <p class="how-work_time">Время: 2-4 часа</p>
+                <div class="content-item">
+                    <div class="content-item-wrapper">
+                        <div class="box-img-wrapper">
+                            <div class="box__img line-5">
+                                <img src="./img/icons/icon-5.webp" alt="Иконка">
+                            </div>
+                        </div>
+                        
+                        <div class="box__content">
+                            <div class="content-box__title">Финальное ревью проекта</div>
+                            <div class="content-box__text">Проект готов. Финальное ревью и полировка до идеального состояния. Передаю файлы проекта, заливаю сайт на хостинг заказчика.</div>
+                            <div class="content-box__time">Время: 2-4 часа</div>
+                        </div>
                     </div>
-
-                    <div class="how-work_step-item bg-img bg-img-5 after-item-6"></div>
                 </div>
 
             </div>
-            <!-- // Section-how-work_wrap -->
+
         </div>
-        <!-- // Container -->
+
     </section>
-    <!-- // Section How Work -->
 
-    <!-- Section Contacts -->
-    <section id="section-contacts" class="contacts">
+    <section class="contacts" id="contacts">
+            <div class="container">
 
-        <div class="container">
-
-            <h2 class="title-2 correction-h2 line">Контакты</h2>
-            <!-- Contacts-row -->
-            <div class="contacts-row">
-                <!-- Contacts-desc -->
-                <div class="contacts-desc">
-
-                    <p class="paragraph-desc">Если вы ищите специалиста по вёрстке сайтов, front-end разработчика в команду или для работы над проектом - напишите мне.</p>
-                    
-                    <div class="contacts-list_wrap">
+                <div class="section-title-wrapper">
+                    <div class="section__title">Контакты</div>
+                </div>
+    
+                <div class="contacts-content-wrapper">
+    
+                    <div class="contacts-content">
+                        <div class="contacts__description">
+                            Если вы ищите специалиста по вёрстке сайтов, front-end разработчика в команду или для работы над проектом — напишите мне.
+                        </div>
 
                         <ul class="contacts-list">
-                            <li class="contacts-list-item">
-                                <div class="contacts-list-title">Email</div>
-                                <div class="contacts-list-link"><a href="mailto:vlad.ustupniy@yandex.ru">vlad.ustupniy@yandex.ru</a></div>
+                            <li class="contacts-list__item">
+                                <div class="contacts-list__title">Email:</div>
+                                <div class="contacts-list__desc"><a href="mailto:vlad.ustupniy@yandex.ru" target="_blank">vlad.ustupniy@yandex.ru</a></div>
                             </li>
-                            <li class="contacts-list-item">
-                                <div class="contacts-list-title">Телефон</div>
-                                <div class="contacts-list-link"><a href="">+7 (968) 425-10-95</a></div>
+
+                            <li class="contacts-list__item">
+                                <div class="contacts-list__title">Телефон:</div>
+                                <div class="contacts-list__desc"><a href="tel:+79684251095">+7 (968) 425-10-95</a></div>
                             </li>
-                            <li class="contacts-list-item">
-                                <div class="contacts-list-title">Адрес</div>
-                                <div class="contacts-list-link">Россия, Москва</div>
+
+                            <li class="contacts-list__item">
+                                <div class="contacts-list__title">Адрес:</div>
+                                <div class="contacts-list__desc">Россия, Москва</div>
                             </li>
                         </ul>
 
+                        <!-- icons -->
+                        <div class="icons">
+                            <div class="icon-box">
+                                <a href="https://vk.com/id134660750" target="_blank" class="fa-stack fa-1x color-vk">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-vk fa-stack-1x fa-inverse"></i>
+                                </a>
+                            </div>
+        
+                            <div class="icon-box">
+                                <a href="mailto:vladustupniy@ya.ru" target="_blank" class="fa-stack fa-1x color-mail">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                                </a>
+                            </div>
+        
+                            <div class="icon-box">
+                                <a href="https://github.com/VladUstupniy" target="_blank" class="fa-stack fa-1x color-github">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- // icons -->
                     </div>
-
-                    <div class="icons icons-on-call">
-
-                        <a class="icons-on-call__link-vk icons-margin" href="https://vk.com/id134660750" target="_blank">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x color-circle-vk"></i>
-                                <i class="fa fa-vk fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-
-                        <a target="_blank" class="icons-on-call__link-telegram icons-margin" href="https://t.me/vladustupniy">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x color-circle-telegram"></i>
-                                <i class="fa fa-paper-plane fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-
-                        <a target="_blank" class="icons-on-call__link-whatsapp icons-margin" href="https://wa.me/79684251095">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x color-circle-whatsapp"></i>
-                                <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-
-                        <!-- <a class="icons-on-call__link-facebook icons-margin" href="#">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x color-circle-facebook"></i>
-                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a> -->
-
-                        <!-- <a class="icons-on-call__link-envelope icons-margin" href="#">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x color-circle-whatsapp"></i>
-                                <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a> -->
-
-                        <!-- <a class="icons-on-call__link-skype icons-margin" href="#">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x color-circle-skype"></i>
-                                <i class="fa fa-skype fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a> -->
-
+    
+                    <div class="contacts-content">
+                        <div class="contacts__form">
+                            <form class="form" id="form" action="mailto:vlad.ustupniy@yandex.ru">
+                                <div class="form-item form-item__email">
+                                    <input id="form-email" class="form-item__input form-item-input" type="text" name="email" required>
+                                    <span class="fake-placeholder">Ваш Email</span>
+                                </div>
+                                <div class="form-item form-item__theme">
+                                    <input class="form-item__input form-item-input" id="form-theme" type="text" name="theme" required>
+                                    <span class="fake-placeholder">Тема письма</span>
+                                </div>
+                                <div class="form-item form-item__message">
+                                    <textarea class="form-item__textarea form-item-input" name="message" id="form-message" cols="30" rows="10" required></textarea>
+                                    <span class="fake-placeholder">Сообщение</span>
+                                </div>
+                                <input class="form-input__btn" type="submit" value="Отправить">
+                            </form>
+                        </div>
                     </div>
-
                 </div>
-                <!-- // Contacts-desc -->
-
-                <div class="contacts-form">
-
-                    <div class="form-input_wrap">
-                        <p>Ваш Email</p>
-                        <input class="form-input form-input-email" type="text">
-                    </div>
-
-                    <div class="form-input_wrap">
-                        <p>Тема письма</p>
-                        <input class="form-input form-input-theme" type="text">
-                    </div>
-
-                    <div class="form-input_wrap">
-                        <p>Сообщение</p>
-                        <textarea class="form-input form-input-message"></textarea>
-                    </div>
-
-
-                    <input type="submit" class="form-button">
-                    
-                </div>
-
             </div>
-            <!-- // Contacts-row -->
-        </div>
-
     </section>
-    <!-- // Section Contacts -->
 
-    <!-- Footer -->
-    <footer class="footer none">
+    <footer class="footer">
         <div class="container">
-            <h4 class="footer-title">© 2022 - Владислав Уступный</h4>
-
-            <div class="footer-text">
-                <p>Веб-разработчик из Москвы, занимаюсь вёрсткой и созданием сайтов. <br>
-                Этот сайт сделал в рамках прохождения обучения по вёрстке на курсах от 
-                <a href="#">Webcademy.ru</a></p>
+            <div class="footer__copyright">© 2022 – Уступный Владислав</div>
+            <div class="footer__text">
+                <p>Front-end разработчик из Москвы. Занимаюсь версткой и созданием сайтов.</p>
+                <p>Этот сайт сделал в рамках прохождения обучения на <a href="http://webcademy.ru" target="_blank">Webcademy.ru</a></p>
             </div>
         </div>
     </footer>
-    <!-- // Footer -->
 
-    <!-- JQuery -->
-    <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
-    <!-- // JQuery -->
+    <div class="backtop">
+        <a class="backtop-link" href="#header"></a>
+    </div>
 
-    <!-- Main JS -->
-    <script src="./js/main.js"></script>
-    <!-- Main JS -->
+    <!-- Libs Js -->
+    <script src="libs/jquery-3.6.0.min.js"></script>
+    <script src="libs/owl-carousel2/owl.carousel.min.js"></script>
+    <!-- Main Js -->
+    <script src="js/owl-carousel.js"></script>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/paginations.js"></script>
+    <script src="js/backtop.js"></script>
 </body>
-
 </html>
